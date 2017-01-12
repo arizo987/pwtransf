@@ -1,12 +1,12 @@
 <?php
-namespace HelloWorldTest\Controllers;
+namespace HelloWorld\Controllers;
 
 use Plenty\Plugin\Controller;
 use Plenty\Plugin\Templates\Twig;
 
 /**
  * Class ContentController
- * @package HelloWorldTest\Controllers
+ * @package HelloWorld\Controllers
  */
 class ContentController extends Controller
 {
@@ -16,6 +16,6 @@ class ContentController extends Controller
 	 */
 	public function sayHello(Twig $twig):string
 	{
-		return $twig->render('HelloWorldTest::content.hello');
+		return $twig->render('HelloWorld::content.hello');
 	}
 }
